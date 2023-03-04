@@ -58,12 +58,7 @@ const FeedBack = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("/api/workouts",{
-        method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      }
-      });
+      const response = await fetch("/api/workouts");
       const json = await response.json();
 
       if (response.ok) {
@@ -71,7 +66,7 @@ const FeedBack = () => {
       }
     };
 
-    if (!user) {
+    if (user) {
       fetchWorkouts();
     }
   }, [dispatch, user]);
