@@ -66,7 +66,6 @@ export default function Register() {
         <DialogContent>
           <TextField
             required
-            autoFocus
             margin="dense"
             id="fullName"
             label="Имя/Фамиля"
@@ -79,7 +78,6 @@ export default function Register() {
           />
           <TextField
             required
-            autoFocus
             margin="dense"
             id="email"
             label="Эл. адрес"

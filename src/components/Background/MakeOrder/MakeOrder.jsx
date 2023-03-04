@@ -86,7 +86,6 @@ export default function MakeOrder() {
           <form ref={ref} encType="multipart/form-data" method="post">
             <TextField
               required
-              autoFocus
               margin="dense"
               id="name"
               label="Kонтактное лицо"
@@ -97,7 +96,6 @@ export default function MakeOrder() {
               {...register("name")}
             />
             <TextField
-              autoFocus
               margin="dense"
               id="name"
               label="Телефон"
@@ -109,7 +107,6 @@ export default function MakeOrder() {
               {...register("tell")}
             />
             <TextField
-              autoFocus
               margin="dense"
               id="name"
               label="Email Address"
@@ -121,7 +118,6 @@ export default function MakeOrder() {
               {...register("email")}
             />
             <TextField
-              autoFocus
               noValidate
               margin="dense"
               id="name"

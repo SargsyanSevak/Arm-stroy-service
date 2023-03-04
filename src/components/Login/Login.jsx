@@ -65,7 +65,6 @@ export default function Login() {
         <DialogContent>
           <TextField
             required
-            autoFocus
             margin="dense"
             id="name"
             label="Эл. адрес"

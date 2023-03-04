@@ -82,7 +82,6 @@ export default function AddFeed() {
           <DialogContent noValidate>
             <TextField
               required
-              autoFocus
               margin="dense"
               id="name"
               type="text"
@@ -94,7 +93,6 @@ export default function AddFeed() {
               value={load}
             />
             <TextField
-              autoFocus
               noValidate
               multiline
               margin="dense"
