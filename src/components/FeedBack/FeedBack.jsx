@@ -66,7 +66,7 @@ const FeedBack = () => {
       }
     };
 
-    if (user) {
+    if (!user) {
       fetchWorkouts();
     }
   }, [dispatch, user]);
