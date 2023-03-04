@@ -25,7 +25,7 @@ export const useLogin = () => {
     if (response.ok) {
       // save the user to local storage
       //localStorage.setItem('user', JSON.stringify(json))
-      Cookies.set("user", JSON.stringify(json),{ expires: 7, path: '/' });
+      Cookies.set("user", JSON.stringify(json),{ expires: 1, path: '/' });
 
       // update the auth context
       dispatch({type: 'LOGIN', payload: json})
