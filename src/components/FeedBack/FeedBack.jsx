@@ -58,7 +58,12 @@ const FeedBack = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("/api/workouts");
+      const response = await fetch("/api/workouts",{
+        method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+      });
       const json = await response.json();
 
       if (response.ok) {
