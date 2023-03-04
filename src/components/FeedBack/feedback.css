@@ -1,0 +1,102 @@
+#feed {
+  transition: 0.5s ease-in-out;
+}
+.feed-back {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(
+    rgb(96, 144, 238),
+    rgb(154, 186, 249),
+    rgb(200, 211, 238)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feed {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  background: linear-gradient(
+      217deg,
+      rgba(1, 95, 22, 0.9),
+      rgba(246, 2, 2, 0) 90.71%
+    ),
+    linear-gradient(127deg, rgba(0, 0, 0, 0.9), rgba(0, 255, 0, 0) 90.71%),
+    linear-gradient(336deg, rgba(0, 0, 3, 0.9), rgba(45, 187, 41, 0) 90.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.swiper {
+  width: 100%;
+  min-height: 500px;
+  height: 500px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feedAuthor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedAuthor h4 {
+  position: absolute;
+  bottom: 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(14, 90, 255);
+}
+@media only screen and (max-width: 730px) {
+  .feed {
+    position: absolute;
+    font-size: 18px;
+    line-height: 30px;
+    z-index: 30000;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .feed {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .feed {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}

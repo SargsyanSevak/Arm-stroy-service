@@ -1,0 +1,10 @@
+.regBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isHave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

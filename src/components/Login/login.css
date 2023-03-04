@@ -1,0 +1,21 @@
+.loginBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.loginTitle {
+  text-align: center;
+  margin: 40px 0px;
+}
+.css-bdhsul-MuiTypography-root-MuiDialogTitle-root {
+  background: #ffffff;
+}
+.MuiDialogTitle-root + .css-ypiqx9-MuiDialogContent-root {
+  background: #ffffff;
+  padding-top: 1;
+}
+.css-hlj6pa-MuiDialogActions-root {
+  background: #ffffff;
+}
