@@ -68,7 +68,7 @@ function stringAvatar(name) {
 function Header({ scrollTop }) {
   const { logout } = useLogout();
   const { user } = useAuthContext();
-  const mw400 = useMediaQuery("(min-width:400px)");
+  const mw500 = useMediaQuery("(min-width:500px)");
   const mw350 = useMediaQuery("(min-width:350px)");
   const handleClick = () => {
     logout();
@@ -191,7 +191,7 @@ function Header({ scrollTop }) {
               component="a"
               href=""
             >
-              {mw400 ? (
+              {mw500 ? (
                 "АРМстройСЕРВИС"
               ) : (
                 <div className="smLogo">
