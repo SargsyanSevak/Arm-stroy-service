@@ -8,8 +8,8 @@ export const useLogout = () => {
   const logout = () => {
 
     // remove user from storage
-    //localStorage.removeItem('user')
-    Cookies.remove('user');
+    localStorage.removeItem('user')
+    //Cookies.remove('user');
     // dispatch logout action
     dispatch({ type: 'LOGOUT' })
     dispatchWorkouts({ type: 'SET_WORKOUTS', payload: null })
