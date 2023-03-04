@@ -28,7 +28,7 @@ const Background = ({ handleScroll, scrollTop }) => {
         <MakeOrder />
       </div>
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
-        
+        <Example/>
       </Box>
     </div>
   );
