@@ -15,6 +15,7 @@ root.render(
         </AuthContextProvider>
       </WorkoutsContextProvider>
 
+    
   </React.StrictMode>
 );
 

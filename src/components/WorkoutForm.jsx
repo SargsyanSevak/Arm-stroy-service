@@ -65,15 +65,6 @@ const WorkoutForm = () => {
         value={load}
         className={emptyFields.includes('load') ? 'error' : ''}
       />
-
-      <label>Reps:</label>
-      <input 
-        type="number"
-        onChange={(e) => setReps(e.target.value)}
-        value={reps}
-        className={emptyFields.includes('reps') ? 'error' : ''}
-      />
-
       <button>Add Workout</button>
       {error && <div className="error">{error}</div>}
     </form>
