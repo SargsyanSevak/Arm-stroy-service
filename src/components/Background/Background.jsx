@@ -10,13 +10,13 @@ const Background = ({ handleScroll, scrollTop }) => {
     <div className="bg">
       <Header handleScroll={handleScroll} scrollTop={scrollTop} />
       <div className="bg-content">
-        <h1 className="animate__animated animate__fadeInUp">
+        <h1 >
           Строительство дороги
         </h1>
-        <h2 className="animate__animated animate__fadeInUp">
+        <h2 >
           Асфальтирование в Воронеже
         </h2>
-        <p className="animate__animated animate__fadeInUp">
+        <p >
           Специалисты компании «АРМстройСЕРВИС» уже более 8 лет успешно
           производят асфальтирование дорог в Воронеже и Воронежской области с
           точным соблюдением технологических требований и гарантийных

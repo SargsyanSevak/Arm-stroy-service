@@ -60,7 +60,7 @@ export default function MakeOrder() {
   };
 
   return (
-    <div className="animate__animated animate__fadeInRight orderBtn">
+    <div className="orderBtn">
       <Button
         variant="contained"
         onClick={handleClickOpen}
