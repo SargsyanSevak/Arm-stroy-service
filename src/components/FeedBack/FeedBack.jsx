@@ -13,6 +13,7 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { Box } from "@mui/system";
 import Person2Icon from "@mui/icons-material/Person2";
+import {instance} from '../../axios'
 const styles = {
   styles: {
     display: "flex",
@@ -57,19 +58,25 @@ const FeedBack = () => {
   const { user } = useAuthContext();
 
   useEffect(() => {
-    const fetchWorkouts = async () => {
-      const response = await fetch("/api/workouts");
-      const json = await response.json();
-console.log(json);
-      if (response.ok) {
-        dispatch({ type: "SET_WORKOUTS", payload: json });
-      }
-    };
+    instance
+    .get('api/workouts')
+    .then(res => res.data)
+    .then(data => console.log(data))
+    .catch(er => console.log(er))
+    // const fetchWorkouts = async () => {
+    //   const response = await fetch("/api/workouts");
+    //   const json = await response.json();
+    //   console.log(json);
+    //   if (response.ok) {
+    //     dispatch({ type: "SET_WORKOUTS", payload: json });
+    //   }
+    // };
 
-    if (!user) {
-      fetchWorkouts();
-    }
-  }, [dispatch, user]);
+    // if (!user) {
+    //   fetchWorkouts();
+    // }
+    
+  }, []);
 
   return (
     <div id="feed">
