@@ -1,32 +1,39 @@
-import { useState } from 'react'
-import { useAuthContext } from './useAuthContext'
-import Cookies from 'js-cookie';
-import { instance } from '../axios';
+import { useState } from "react";
+import { useAuthContext } from "./useAuthContext";
+import Cookies from "js-cookie";
+import { instance } from "../axios";
 
 export const useLogin = () => {
-  const [error, setError] = useState(null)
-  const [isLoading, setIsLoading] = useState(null)
-  const { dispatch } = useAuthContext()
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(null);
+  const { dispatch } = useAuthContext();
 
   const login = async (email, password) => {
-    setIsLoading(true)
-    setError(null)
-    instance
-    .post('api/user/login',{email, password })
-    .then(res =>{
-      if (res.status === 400) {
-        setIsLoading(false)
-        setError(res.data.error)
-      }
+    setIsLoading(true);
+    setError(null);
+    try {
+      const res = await instance.post("api/user/login", {
+        email,
+        password,
+      });
       localStorage.setItem('user', JSON.stringify(res.data))
       dispatch({type: 'LOGIN', payload: res.data})
       setIsLoading(false)
-    })
+
+    } catch (error) {
+      setIsLoading(false)
+      setError(error.response.data.error)
+    }
+
+    // localStorage.setItem('user', JSON.stringify(response.data))
+    // dispatch({type: 'LOGIN', payload: res.data})
+    // setIsLoading(false)
+
     // const response = await fetch('/api/user/login', {
     //   method: 'POST',
     //   headers: {'Content-Type': 'application/json',
-    //   "Access-Control-Allow-Origin" : "*", 
-    //   "Access-Control-Allow-Credentials" : true 
+    //   "Access-Control-Allow-Origin" : "*",
+    //   "Access-Control-Allow-Credentials" : true
     // },
     //   body: JSON.stringify({email, password })
     // })
@@ -46,7 +53,7 @@ export const useLogin = () => {
     //   // update loading state
     //   setIsLoading(false)
     // }
-  }
+  };
 
-  return { login, isLoading, error }
-}
+  return { login, isLoading, error };
+};

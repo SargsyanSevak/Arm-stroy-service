@@ -9,6 +9,7 @@ import { useWorkoutsContext } from "../../hooks/useWorkoutsContext";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
+import { instance } from "../../axios";
 
 export default function AddFeed() {
   const { dispatch } = useWorkoutsContext();
@@ -35,35 +36,26 @@ export default function AddFeed() {
       return;
     }
 
-    const workout = { title, load };
-
-    const response = await fetch("/api/workouts", {
-      method: "POST",
-      body: JSON.stringify(workout),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
+    instance
+    .post("/api/workouts", { title, load },{Authorization: `Bearer ${user.token}`})
+    .then((res) => {
+      if (res.status == 400) {
+        setError(res.error);
+        setEmptyFields(res.emptyFields);
+      } else {
+        setTitle("");
+        setLoad("");
+        setError(null);
+        setEmptyFields([]);
+        dispatch({ type: "CREATE_WORKOUT", payload: res.data });
+        setShowAlert(!showAlert);
+        setTimeout(() => {
+          setShowAlert(false);
+          setOpen(false);
+        }, 1800);
+        setShowAlert(!showAlert);
+      }
     });
-    const json = await response.json();
-
-    if (!response.ok) {
-      setError(json.error);
-      setEmptyFields(json.emptyFields);
-    }
-    if (response.ok) {
-      setTitle("");
-      setLoad("");
-      setError(null);
-      setEmptyFields([]);
-      dispatch({ type: "CREATE_WORKOUT", payload: json });
-      setShowAlert(!showAlert);
-      setTimeout(() => {
-        setShowAlert(false);
-        setOpen(false);
-      }, 1800);
-      setShowAlert(!showAlert);
-    }
   };
 
   return (
