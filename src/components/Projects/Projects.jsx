@@ -9,18 +9,18 @@ const Projects = () => {
       <div className="Projects">
         <div className="statisticsContainer">
           <div className="statistics">
-            <span>15000</span>
-            <h5>Асфальтировано дорог, км</h5>
+            <span>40000</span>
+            <h5>Асфальтировано дорог, M<sup>2</sup></h5>
           </div>
 
           <div className="statistics">
             <span>5000</span>
-            <h5>Отремонтировано дорог, км </h5>
+            <h5>Отремонтировано дорог, м<sup>2</sup> </h5>
           </div>
 
           <div className="statistics">
-            <span>450000</span>
-            <h5>Уложено тротуарной плитки, м2</h5>
+            <span>45000</span>
+            <h5>Уложено тротуарной плитки, м<sup>2</sup></h5>
           </div>
         </div>
       </div>

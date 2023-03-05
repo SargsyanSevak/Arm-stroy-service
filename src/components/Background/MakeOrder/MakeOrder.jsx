@@ -34,7 +34,7 @@ export default function MakeOrder() {
     ) {
       await emailjs
         .sendForm(
-          "service_pfutrzf",
+          "service_fqwb7mh",
           "template_xcihneq",
           ref.current,
           "7juDdm_vDM8bVfl97"
