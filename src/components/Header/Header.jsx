@@ -97,7 +97,7 @@ function Header({ scrollTop }) {
     <AppBar
       position="fixed"
       color="transparent"
-      elevation={5}
+      elevation={0}
     >
       <Container
         id="header"

@@ -21,7 +21,10 @@ function App() {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
-
+  window.addEventListener("scroll", function() {
+    let header = document.querySelector(".headerContainer");
+    header.classList.toggle("scrolled", window.scrollY > 0);
+  });
   return (
     <div className="App" >
       <Background />

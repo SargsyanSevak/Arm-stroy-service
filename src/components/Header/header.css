@@ -1,13 +1,3 @@
-.bgScroll {
-  background: linear-gradient(
-      217deg,
-      rgba(53, 53, 79, 255),
-      rgba(53, 53, 79, 255) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 0, 0, 0.9), rgba(0, 255, 0, 0) 90.71%),
-    linear-gradient(336deg, rgba(0, 0, 3, 0.9), rgba(45, 187, 41, 0) 90.71%);
-  position: relative;
-}
 .headerContainer {
   background-position: center;
   background-size: cover;
@@ -16,12 +6,15 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background: inherit;
+  background:inherit;
   border: none;
   box-shadow: none;
   position: relative;
+  transition: .3s ease-in-out;
 }
-
+.headerContainer.scrolled {
+  background: #35354f;
+}
 .avatar {
   display: flex;
   flex-direction: column;
