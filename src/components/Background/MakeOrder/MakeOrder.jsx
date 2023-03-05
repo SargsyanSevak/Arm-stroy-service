@@ -40,7 +40,7 @@ export default function MakeOrder() {
           "7juDdm_vDM8bVfl97"
         )
         .then(
-          (result) => {
+          () => {
             reset();
             setErr(false);
             setSent(true);

@@ -1,6 +1,6 @@
 .Projects {
   width: 100%;
-  height: 300px;
+  min-height: 100px;
   /* background-image: url('../../Assets/banner1.jpg');
   background-position: center;
   background-size: cover;
@@ -13,7 +13,7 @@
 }
 .statisticsContainer {
   width: 100%;
-  height: 300px;
+  min-height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
