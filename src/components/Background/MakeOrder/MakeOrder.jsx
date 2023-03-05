@@ -118,11 +118,12 @@ export default function MakeOrder() {
               {...register("email")}
             />
             <TextField
+              multiline
               noValidate
               margin="dense"
               id="name"
               label="Сообщения"
-              type="email"
+              type="text"
               fullWidth
               autoComplete="off"
               variant="outlined"
