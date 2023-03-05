@@ -11,20 +11,20 @@ import FeedBack from "./components/FeedBack/FeedBack";
 import CallMe from "./components/CallMe/CallMe";
 
 function App() {
-  const [scrollTop, setScrollTop] = useState(0);
-  const handleScroll = () => {
-    setScrollTop(window.scrollY);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // const [scrollTop, setScrollTop] = useState(0);
+  // const handleScroll = () => {
+  //   setScrollTop(window.scrollY);
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
-    <div className="App" onScroll={handleScroll}>
-      <Background handleScroll={handleScroll} scrollTop={scrollTop} />
+    <div className="App" >
+      <Background />
       <Services />
       <AboutUs />
       <Projects />

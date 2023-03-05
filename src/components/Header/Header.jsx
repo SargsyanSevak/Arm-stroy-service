@@ -97,12 +97,12 @@ function Header({ scrollTop }) {
     <AppBar
       position="fixed"
       color="transparent"
-      elevation={scrollTop > 20 ? 5 : 0}
+      elevation={5}
     >
       <Container
         id="header"
         maxWidth="xl"
-        className={scrollTop > 20 ? "bgScroll" : "headerContainer"}
+        className={"headerContainer"}
       >
         <Toolbar disableGutters>
           <Typography
