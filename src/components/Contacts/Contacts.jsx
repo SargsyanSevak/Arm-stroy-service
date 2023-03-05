@@ -11,6 +11,7 @@ const Contacts = () => {
     <div id="contacts">
       <div className="header">КОНТАКТЫ</div>
       <div className="ContactsContainer">
+      <Map />
         <div className="info">
           <div className="infoBox animate__animated animate__fadeInUp">
             <div className="infoIcon">
@@ -64,7 +65,7 @@ const Contacts = () => {
           </div>
         </div>
         <div className="map">
-          <Map />
+          
         </div>
       </div>
     </div>

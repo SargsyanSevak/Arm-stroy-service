@@ -27,21 +27,6 @@
     padding: 0px 20px;
     background: #ffffff; 
 }
-.info:nth-child(1){
-    animation-duration: .3s;
-}
-.info:nth-child(2){
-    animation-duration: .5s;
-}
-.info:nth-child(3){
-    animation-duration: .8s;
-}
-.info:nth-child(4){
-    animation-duration: 1s;
-}
-.info:nth-child(5){
-    animation-duration: 1.5s;
-}
 .info .callIcon{
     display: flex;
     justify-content: center;
@@ -49,7 +34,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: rgb(244, 235, 235);
+    background: rgb(255, 255, 255);
+    
 }
 .contactTxt{
     display: flex;
@@ -58,7 +44,7 @@
     width: 100%;
     height: 50px;
     border-radius: 50px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    background: linear-gradient(145deg, #ffffff, #ffffff);
     box-shadow:  20px 20px 60px #bebebe,
                  -20px -20px 60px #ffffff;
 }
@@ -72,13 +58,15 @@
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    background:  #35354f;
-    background: #3c3c58;
-    border-radius: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     letter-spacing: 1px;
-    box-shadow: 3px 3px rgb(247, 245, 245), -1em 0 0.4em rgb(143, 143, 136);
+    background-color: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     
 }
 @media only screen and (max-width: 900px) {
