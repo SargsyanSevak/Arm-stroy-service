@@ -50,7 +50,6 @@ export default function Login() {
         variant="text"
         color="primary"
         fullWidth
-        startIcon={<LoginIcon />}
         onClick={handleClickOpen}
       >
         Войти
