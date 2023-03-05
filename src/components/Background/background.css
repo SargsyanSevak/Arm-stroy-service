@@ -1,7 +1,7 @@
 .bg {
   width: 100%;
   min-height: 100vh;
-  background-image: url("./road2.png");
+  background-image: url("../../Assets/road2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
