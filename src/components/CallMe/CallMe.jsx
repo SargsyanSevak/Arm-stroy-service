@@ -5,7 +5,7 @@ import "./callMe.css";
 export default function CallMe() {
   return (
     <div className="CallMe">
-      <a href="tel:+8(951)560-11-22" className="callMeText">
+      <a href="tel:+7(951)560-11-22" className="callMeText">
         <Button
           variant="outlined"
           endIcon={<CallIcon />}
