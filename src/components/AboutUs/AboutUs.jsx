@@ -1,15 +1,17 @@
 import React from "react";
 import "./aboutUs.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import aboutIcon from "../../Assets/aboutIcon.webp";
 import bgabout from '../../Assets/bgabout4.png'
 const AboutUs = () => {
+  const mw900 = useMediaQuery("(min-width:900px)");
   return (
     <div id="about">
       <div className="header">
         <h3>КОРОТКО О НАС</h3>
       </div>
       <div className="AboutUsContainer">
-        <div className="about">
+        <div className={mw900 ? 'about' : 'aboutSm'}>
           <div className="roadIcon">
             <img src={aboutIcon} alt="" />
           </div>
