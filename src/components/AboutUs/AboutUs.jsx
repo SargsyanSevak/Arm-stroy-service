@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutUs.css";
 import aboutIcon from "../../Assets/aboutIcon.webp";
-import bgabout3 from "../../Assets/bgabout3.jpg";
+import bgabout from '../../Assets/bgabout4.png'
 const AboutUs = () => {
   return (
     <div id="about">
@@ -25,7 +25,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="aboutImage">
-          <img src={bgabout3} alt="" />
+          <img src={bgabout} alt="" />
         </div>
       </div>
     </div>
