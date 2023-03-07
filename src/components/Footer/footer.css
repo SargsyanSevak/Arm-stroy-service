@@ -30,7 +30,7 @@
   background: white;
   position: absolute;
   top: -50px;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 .logoCircle {
