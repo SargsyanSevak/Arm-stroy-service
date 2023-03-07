@@ -106,3 +106,23 @@
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .card{
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1670px) {
+  .card{
+    width: 500px;
+  }
+  .service_Item {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .img{
+    width: 500px;
+    max-width: 100%;
+  }
+}

@@ -65,7 +65,7 @@ function stringAvatar(name) {
     children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
   };
 }
-function Header({ scrollTop }) {
+function Header() {
   const { logout } = useLogout();
   const { user } = useAuthContext();
   const mw500 = useMediaQuery("(min-width:500px)");
@@ -101,7 +101,7 @@ function Header({ scrollTop }) {
     >
       <Container
         id="header"
-        maxWidth="xl"
+        maxWidth="100%"
         className={"headerContainer"}
       >
         <Toolbar disableGutters>
