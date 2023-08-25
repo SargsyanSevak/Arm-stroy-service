@@ -1,70 +1,10 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1468" alt="Screenshot 2023-08-25 at 8 11 25 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/86c1a185-3a3f-4b5b-b240-a587f20b70b5">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 11 54 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/adfa9bbc-35e8-4bd7-a335-600c4ad9982c">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 12 15 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/578aa463-e
+<img width="1468" alt="Screenshot 2023-08-25 at 8 12 36 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/e1867f6f-4deb-4b46-9032-4f5b6d4e01d5">
+b07-4805-bf9e-748409d5f8c3">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 12 53 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/8d9922d6-8428-40f5-b480-5f99a013a4ae">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 13 07 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/583270cb-4132-425b-b10e-3400e00b6fa4">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 13 26 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/7b41509f-05a5-4966-860c-fc974361637d">
+<img width="1468" alt="Screenshot 2023-08-25 at 8 13 39 AM" src="https://github.com/SargsyanSevak/vegan-restaurant/assets/107807929/fce03bbb-7b01-41aa-97af-66799659ad07">
